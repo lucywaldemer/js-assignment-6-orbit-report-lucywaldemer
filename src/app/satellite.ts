@@ -13,11 +13,12 @@ export class Satellite {
 		this.orbitType = orbitType;
 		this.operational = operational;
    }
-	
+	// SpaceDebris check method.
 	isSpaceDebris(): boolean {
-		return true;
+		if (this.type = 'Space Debris'){
+			return true;
+		} else {
+			return false;
+		}
    }
-
 }
-
-// TODO 3a: fix isSpaceDebris check
