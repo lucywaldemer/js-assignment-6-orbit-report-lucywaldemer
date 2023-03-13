@@ -25,18 +25,18 @@ describe('AppComponent', () => {
 	element = fixture.debugElement;
 
 	fixture.detectChanges();
- });
+});
 
- it('should create', () => {
+it('should create', () => {
 	expect(component).toBeTruthy();
- });
+});
 
- it('should contain the list component', async(() => {
+it('should contain the list component', async(() => {
 	const fixture = TestBed.createComponent(AppComponent);
 	fixture.detectChanges();
 	const compiled = fixture.debugElement.nativeElement;
 	expect(compiled.querySelector('app-orbit-list')).not.toBe(null);
- }));
+}));
 
 
 });
